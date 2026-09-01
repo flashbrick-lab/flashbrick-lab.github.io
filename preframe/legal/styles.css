@@ -60,10 +60,16 @@ a { color: inherit; }
   letter-spacing: -0.02em;
 }
 
-.brand-icon {
-  width: 34px;
-  height: 34px;
+.brand > .brand-icon {
+  flex: 0 0 34px;
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px;
+  max-width: 34px;
+  max-height: 34px;
+  aspect-ratio: 1 / 1;
   display: block;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 9px;
   object-fit: cover;
