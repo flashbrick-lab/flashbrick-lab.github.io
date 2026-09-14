@@ -23,11 +23,11 @@
     <article class="document">
       <p class="eyebrow">Legal / Privacy</p>
       <h1>PreFrame 隐私政策</h1>
-      <p class="meta">生效及最近更新：2026 年 9 月 1 日</p>
+      <p class="meta">生效及最近更新：2026 年 9 月 14 日</p>
       <div class="language-switch"><a href="#zh">中文</a><a href="#en">English</a></div>
 
       <section id="zh">
-        <div class="notice"><strong>简要说明：</strong>PreFrame 的拍摄、RAW 处理、相纸生成和实体扫描默认在你的设备本地完成。当前版本不包含广告或行为分析 SDK，也不会把照片或 DNG 上传到我们的服务器。</div>
+        <div class="notice"><strong>简要说明：</strong>PreFrame 的日常拍摄、RAW 处理、相纸生成和实体扫描默认在你的设备本地完成。只有当你主动发送“预测反馈”时，本次选择的预测图与参数，以及你另外选择的扫描或 DNG 才会上传。PreFrame 不包含广告或跨 App 跟踪。</div>
 
         <h2>1. 适用范围与运营者</h2>
         <p>本政策适用于 Flashbrick Lab（下称“我们”）提供的 PreFrame iOS App，以及本网站提供的相关支持服务。如有隐私问题，请发送邮件至 <a href="mailto:flashbrick.lab@gmail.com">flashbrick.lab@gmail.com</a>。</p>
@@ -35,6 +35,11 @@
         <h2>2. PreFrame 如何处理数据</h2>
         <h3>本机拍摄与图像处理</h3>
         <p>当你拍摄、生成 Instax 预览、扫描实体相纸、配对照片或制作导出图片时，PreFrame 会在设备上处理相机画面、照片、DNG、曝光与镜头参数、色彩信息以及你选择的编辑内容。这些图像内容不会由 PreFrame 自动上传到我们的服务器。</p>
+
+        <h3>你主动发送的预测反馈</h3>
+        <p>当你在 App 中打开“反馈预测效果”并点击发送时，PreFrame 会上传本次预测成片、拍摄参数、你选出的最接近实体相纸的曝光结果、勾选的问题类型，以及你主动填写的补充文字。若已有实体扫描，你可以选择是否一并发送；原始 DNG 也由你单独选择，并在发送前再次确认。你可以只发送基础反馈，不必发送扫描或 DNG。</p>
+        <p>这些内容用于比较预测与实体相纸、发现曝光、颜色、闪光或几何问题，并改进和验证 PreFrame 的成像模型。请不要提交你不希望我们看到的私人画面。PreFrame 不要求账户；每次提交会生成一个随机反馈编号，反馈包不包含广告标识符，也不会用于广告、用户画像或跨 App 跟踪。</p>
+        <p>反馈可能包含 App 与构建版本、iPhone 与 iOS 型号、相机模式或机型、画幅、曝光与闪光设置、可用时的距离和处理状态等技术参数。这些参数只用于还原本次预测条件和排查问题。</p>
 
         <h3>姿态、运动与深度信息</h3>
         <p>扫描功能可能使用设备运动、相机姿态及受支持设备上的深度或 LiDAR 信息，以判断稳定程度、定位相纸边框和完成透视校正。这些信息用于实时计算，不用于广告跟踪，也不会由 PreFrame 上传到我们的服务器。</p>
@@ -66,15 +71,16 @@
 
         <h2>5. 保存期限与删除</h2>
         <p>本地内容会保留到你删除对应记录或卸载 App。系统照片图库中的副本由你通过“照片”App 管理。Apple 的购买与优惠码记录依照 Apple 的规则保存。</p>
+        <p>你主动提交的反馈会保留到完成测试、模型分析和必要的问题排查为止，不再需要时会删除或去标识化。若希望提前删除，请将发送成功后显示的反馈编号发至 <a href="mailto:flashbrick.lab@gmail.com">flashbrick.lab@gmail.com</a>。没有反馈编号时，我们可能无法从不含账户信息的反馈中确认对应文件。</p>
 
         <h2 id="choices">6. 你的选择与权利</h2>
-        <p>你可以撤销系统权限、删除 App 内记录或关闭 DNG 保留。App Store 购买与优惠码记录由 Apple 管理；相关请求请通过 Apple 账户和支持渠道处理。</p>
+        <p>你可以撤销系统权限、删除 App 内记录、关闭 DNG 保留，或不使用预测反馈。发送反馈前，你可以逐项关闭实体扫描和 DNG；发送后可凭反馈编号联系我们请求删除。App Store 购买与优惠码记录由 Apple 管理；相关请求请通过 Apple 账户和支持渠道处理。</p>
 
         <h2>7. 儿童隐私</h2>
         <p>PreFrame 面向一般摄影用户，不以儿童为目标，也不会故意收集儿童的个人信息。如果你认为儿童向我们提供了个人信息，请联系我们处理。</p>
 
         <h2>8. 安全、第三方与跨境处理</h2>
-        <p>我们采取与数据性质相称的技术和管理措施。Apple 及你主动选择的分享目标会依照各自政策处理数据。互联网传输或存储无法保证绝对安全。</p>
+        <p>预测反馈通过 HTTPS 发送，并存储在私有的阿里云对象存储中，当前服务区域位于中国北京。我们使用访问控制和服务端加密保护反馈；阿里云可能在提供托管、传输和安全防护时处理必要的网络与技术信息。若你在中国大陆以外提交反馈，数据会传输到中国大陆。Apple、阿里云及你主动选择的其他分享目标会依照各自政策处理数据。互联网传输或存储无法保证绝对安全。</p>
 
         <h2>9. 政策更新</h2>
         <p>功能或法律要求发生变化时，我们会更新本页，并修改顶部日期。若变化对你的权利有重要影响，我们会在 App 内或通过其他适当方式提示。</p>
@@ -88,14 +94,19 @@
       <section id="en" lang="en">
         <p class="eyebrow">English version</p>
         <h2>PreFrame Privacy Policy</h2>
-        <p class="meta">Effective and last updated: September 1, 2026</p>
-        <div class="notice"><strong>In short:</strong> capture, RAW processing, Instax rendering, and physical-print scanning are performed on your device by default. The current version contains no advertising or behavioral analytics SDK, and PreFrame does not upload your photos or DNG files to our servers.</div>
+        <p class="meta">Effective and last updated: September 14, 2026</p>
+        <div class="notice"><strong>In short:</strong> everyday capture, RAW processing, instant-print rendering, and physical-print scanning are performed on your device by default. Only when you deliberately submit Prediction Feedback does PreFrame upload the selected prediction and parameters, plus any scan or DNG you separately choose to include. PreFrame contains no advertising or cross-app tracking.</div>
 
         <h3>Scope and contact</h3>
         <p>This policy applies to the PreFrame iOS app and related support pages operated by Flashbrick Lab (“we”). Contact us at <a href="mailto:flashbrick.lab@gmail.com">flashbrick.lab@gmail.com</a>.</p>
 
         <h3>On-device processing and storage</h3>
         <p>PreFrame processes camera frames, photos, DNG files, exposure and lens metadata, color information, edits, physical-print scans, pairings, and exports on your device. Capture records, scan records, favorites, pairings, metadata, and preferences remain locally stored until you delete them or uninstall the app. Enabling DNG retention uses additional local storage.</p>
+
+        <h3>Prediction Feedback you choose to submit</h3>
+        <p>When you open Prediction Feedback and tap submit, PreFrame uploads the selected prediction, capture parameters, the exposure result you chose as closest to the physical print, selected issue categories, and any note you enter. You separately choose whether to include an available physical scan or original DNG, and RAW submission requires an additional confirmation. You may submit basic feedback without a scan or DNG.</p>
+        <p>We use this material to compare predictions with physical prints, investigate exposure, color, flash, or geometry issues, and evaluate and improve PreFrame's imaging models. Do not submit private images you do not want us to see. No account is required. Each submission receives a random feedback ID; the feedback package contains no advertising identifier and is not used for advertising, profiling, or cross-app tracking.</p>
+        <p>Feedback may include the app and build version, iPhone and iOS model, capture mode or camera profile, film format, exposure and flash settings, available distance information, and processing state. These technical details are used only to reproduce the conditions of the submitted prediction and investigate the reported result.</p>
 
         <h3>Motion and depth</h3>
         <p>Scanning may use device motion, camera pose, and—on supported devices—depth or LiDAR information to evaluate stability, find print edges, and correct perspective. This information is used for real-time processing, is not used for advertising, and is not uploaded by PreFrame.</p>
@@ -113,10 +124,11 @@
         <p>We do not sell personal information, track you across apps or websites, analyze photos for advertising profiles, or require a PreFrame account for on-device capture and scanning.</p>
 
         <h3>Retention, deletion, and your choices</h3>
-        <p>Local content remains until you delete it or uninstall the app. Apple controls retention for App Store purchases and offer codes. You may revoke permissions, delete local records, or disable DNG retention at any time.</p>
+        <p>Local content remains until you delete it or uninstall the app. Apple controls retention for App Store purchases and offer codes. You may revoke permissions, delete local records, disable DNG retention, or choose not to use Prediction Feedback at any time.</p>
+        <p>Submitted feedback is retained only as long as needed for testing, model analysis, and necessary troubleshooting, then deleted or de-identified. To request earlier deletion, email <a href="mailto:flashbrick.lab@gmail.com">flashbrick.lab@gmail.com</a> with the feedback ID shown after submission. Without that ID, we may be unable to identify a submission that is not connected to an account.</p>
 
         <h3>Children, security, and changes</h3>
-        <p>PreFrame is a general photography tool and is not directed to children. We use safeguards appropriate to the data and HTTPS for network requests, but no system is absolutely secure. We will update this page and its date when practices materially change.</p>
+        <p>PreFrame is a general photography tool and is not directed to children. Prediction Feedback is transmitted over HTTPS and stored in private Alibaba Cloud Object Storage in the Beijing, China region, using access controls and server-side encryption. Alibaba Cloud may process necessary network and technical information to provide hosting, transmission, and security services. Submitting from outside mainland China transfers the selected feedback to mainland China. No system is absolutely secure. We will update this page and its date when practices materially change.</p>
 
         <h3>Contact</h3>
         <p>Operator: Flashbrick Lab<br>Email: <a href="mailto:flashbrick.lab@gmail.com">flashbrick.lab@gmail.com</a><br>Support: <a href="support.html">PreFrame Support</a></p>
