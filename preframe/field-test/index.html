@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#171915">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>PreFrame 实拍测试记录</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__line">
+      <div>
+        <p class="eyebrow">PREFRAME · FIELD TEST</p>
+        <h1>实拍测试记录</h1>
+      </div>
+      <span class="header-total">82 张</span>
+    </div>
+    <div class="progress-block" aria-live="polite">
+      <div class="progress-copy"><strong id="progressCount">0 / 82</strong><span id="progressPercent">0%</span></div>
+      <div class="progress-track"><span id="progressBar"></span></div>
+      <p id="saveStatus">完成勾选自动保存在这台设备</p>
+    </div>
+  </header>
+
+  <main>
+    <details class="guide-card">
+      <summary><span><small>拍摄前</small>准备与四天安排</span><span class="summary-arrow">⌄</span></summary>
+      <div class="guide-content">
+        <h3>开始前确认</h3>
+        <div id="prepChecklist" class="checklist"></div>
+        <div class="notice"><strong>距离以卷尺为准。</strong>LiDAR 读数、自动闪光是否真的触发、暂停和失误都要另行记录。每次先保存 App 预测与 DNG，再按实体相机快门；相纸弹出后立刻在背面写编号。</div>
+        <h3>建议日程</h3>
+        <ol class="schedule">
+          <li><strong>前半天</strong><span>不用相纸，检查 0.4–4m 的 LiDAR 距离门限，卷尺作为真值。</span></li>
+          <li><strong>第 1 天</strong><span>S01–S05，天气稳定时完成；逆光闪光对照优先。</span></li>
+          <li><strong>第 2 天</strong><span>先做 S06；S07–S08 控制在 EV100 5±0.5；S09–S10 夜间户外并记录照度。</span></li>
+          <li><strong>第 3 天</strong><span>显影稳定后扫描，不预先改曝光或白平衡，按编号匹配 DNG。</span></li>
+          <li><strong>第 4 天</strong><span>检查漏号、错误设置和闪光失败，只补拍明确失败项。</span></li>
+        </ol>
+      </div>
+    </details>
+
+    <section class="scene-nav" aria-label="场景导航">
+      <div class="filter-row">
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索场景或编号"></label>
+        <label class="toggle"><input id="incompleteOnly" type="checkbox"><span>只看未完成</span></label>
+      </div>
+      <nav id="sceneChips" class="scene-chips"></nav>
+    </section>
+
+    <div id="sceneList" class="scene-list"></div>
+  </main>
+
+  <template id="sceneTemplate">
+    <article class="scene-card">
+      <button class="scene-header" type="button" aria-expanded="false">
+        <span class="scene-code"></span>
+        <span class="scene-title-wrap"><strong class="scene-title"></strong><small class="scene-summary"></small></span>
+        <span class="scene-count"></span>
+        <span class="chevron">⌄</span>
+      </button>
+      <div class="scene-body" hidden>
+        <div class="scene-brief"></div>
+        <div class="shots"></div>
+      </div>
+    </article>
+  </template>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
+

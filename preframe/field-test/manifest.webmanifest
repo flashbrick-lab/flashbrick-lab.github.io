@@ -1,0 +1,14 @@
+{
+  "name": "PreFrame 实拍测试记录",
+  "short_name": "PreFrame 测试",
+  "description": "拍立得自动相机实拍完成清单",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#10110f",
+  "theme_color": "#171915",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
+
