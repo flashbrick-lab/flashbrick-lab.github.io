@@ -15,33 +15,50 @@
       place-items: center;
       padding: 28px;
       background:
-        radial-gradient(circle at 70% 15%, rgba(19, 211, 189, .13), transparent 34rem),
-        #101411;
-      color: #f5f4ed;
+        radial-gradient(circle at 72% 14%, rgba(246, 181, 77, .16), transparent 34rem),
+        radial-gradient(circle at 25% 82%, rgba(255, 211, 110, .045), transparent 28rem),
+        #100d09;
+      color: #f7f1e7;
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
     }
     main { width: min(100%, 680px); }
-    .mark {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border: 1px solid rgba(255,255,255,.16);
-      border-radius: 12px;
-      background: #202621;
-      color: #ffe500;
-      font: 700 13px ui-monospace, monospace;
+    .eyebrow {
+      margin: 0 0 18px;
+      color: #f6b54d;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
     }
-    p { margin: 22px 0 8px; color: #13d3bd; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-    h1 { margin: 0; font-size: clamp(44px, 10vw, 78px); line-height: 1.02; letter-spacing: -.055em; }
-    .note { margin-top: 20px; color: #aeb6ad; font-size: 17px; line-height: 1.65; letter-spacing: 0; text-transform: none; }
-    a { color: #f5f4ed; text-underline-offset: 4px; }
+    h1 {
+      margin: 0;
+      font-size: clamp(44px, 10vw, 78px);
+      line-height: 1.02;
+      letter-spacing: -.055em;
+    }
+    .note {
+      margin: 22px 0 0;
+      color: #b8ad9c;
+      font-size: 17px;
+      line-height: 1.65;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    a {
+      color: #f7f1e7;
+      text-decoration-color: rgba(246, 181, 77, .62);
+      text-underline-offset: 4px;
+      transition: color 160ms ease, text-decoration-color 160ms ease;
+    }
+    a:hover {
+      color: #ffd36e;
+      text-decoration-color: #ffd36e;
+    }
   </style>
 </head>
 <body>
   <main>
-    <div class="mark">FL</div>
-    <p>Flashbrick Lab</p>
+    <p class="eyebrow">Flashbrick Lab</p>
     <h1>Tools for deliberate photography.</h1>
     <p class="note">The full site is being prepared. For PreFrame policies and support, visit <a href="preframe/legal/">PreFrame Legal &amp; Support</a>.</p>
   </main>
